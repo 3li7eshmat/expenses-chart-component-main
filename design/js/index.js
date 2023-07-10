@@ -36,12 +36,5 @@ fetch('../../data.json').then(res => {
             chart.classList.add('current');
         }
     
-    })
-})
-
-
-
-
-
-console.log(day)
-console.log(dayWeek);
+    });
+});
