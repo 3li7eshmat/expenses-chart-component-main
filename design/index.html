@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <div class="balance">
+                    <p>My Balance</p>
+                    <p class="header-big">700.5$</p>
+                </div>
+                <div class="logo">
+                    <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <circle fill="#382314" cx="48" cy="24" r="24" />
+                            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+                        </g>
+                    </svg>
+                </div>
+            </header>
+            <main>
+                <h2>Spending - Last 7 Days</h2>
+                <div class="charts">
+                    <div id="chart" style="height: 100px;" class="mon" data-data=""> <span></span>
+                        <p>mon</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="tue" data-data=""> <span></span>
+                        <p>tue</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="wed" data-data=""> <span></span>
+                        <p>wed</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="thu" data-data=""> <span></span>
+                        <p>thu</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="fri" data-data=""> <span></span>
+                        <p>fri</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="sat" data-data=""> <span></span>
+                        <p>sat</p>
+                    </div>
+                    <div id="chart" style="height: 100px;" class="sun" data-data=""> <span></span>
+                        <p>sun</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="total">
+                        <p>Total this month</p>
+                        <p class="big">478.33$</p>
+                    </div>
+                    <div class="last-month">
+                        <p class="big">+ 2.4%</p>
+                        <p>from last month</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

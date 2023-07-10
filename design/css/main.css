@@ -1,0 +1,212 @@
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 13px;
+    }
+}
+
+.big {
+    color: var(--dark-brown);
+}
+
+.container {
+    background-color: var(--cream);
+    height: 100vh;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+.content {
+    padding: 20px;
+    border-radius: 25px;
+    width: 440px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+header, main {
+    width: 400px;
+    border-radius: 15px;
+}
+
+@media (max-width: 480px) {
+    header, main {
+        width: 100%;
+    }
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--soft-red);
+    color: white;
+}
+
+header .balance p:first-child {
+    margin-top: 0;
+}
+
+header .header-big {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    header .header-big {
+        font-size: 25px;
+    }
+}
+
+main {
+    background-color: var(--very-pale-orange);
+    padding: 30px;
+}
+
+main > h2 {
+    margin: 0;
+}
+
+main .charts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    align-items: flex-end;
+    border-bottom: 1.5px solid var(--cream);
+}
+
+main #chart {
+    width: 40px;
+    background-color: var(--soft-red);
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+main .current {
+    background-color: var(--cyan) !important;
+}
+
+main #chart span {
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    top: -35px;
+    left: -5px;
+    background: var(--dark-brown);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: .3s;
+}
+
+@media (max-width: 480px) {
+    main #chart {
+        width: 35px;
+        border-radius: 2px;
+    }
+
+    main #chart span {
+        width: 45px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    main #chart {
+        width: 30px;
+    }
+
+    main #chart span {
+        width: 40px;
+        font-size: 11px;
+        /* padding: 0; */
+    }
+}
+
+main #chart:hover {
+    filter: brightness(130%);
+}
+
+main #chart:hover span {
+    opacity: 1;
+}
+
+main #chart:hover p {
+    filter: brightness(100%);
+}
+
+main #chart p {
+    position: absolute;
+    bottom: -30px;
+    left: 5px;
+}
+
+main .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+main p {
+    color: var(--medium-brown);
+}
+
+.stats .total .big {    
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stats .last-month .big {
+    font-size: 20px;
+    font-weight: bold;
+}
