@@ -2,7 +2,7 @@ let charts = document.querySelectorAll('#chart');
 let chartSpans = document.querySelectorAll('#chart span');
 
 
-fetch('../../data.json').then(res => {
+fetch('https://3li7eshmat.github.io/expenses-chart-component-main/data.json').then(res => {
     return res.json();
 }).then(data => {
 
